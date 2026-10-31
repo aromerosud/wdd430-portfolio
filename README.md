@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arturo Romero - Portfolio
+
+## Live Demo
+
+**Deployed Application:** [View Portfolio](https://wdd430-portfolio-kappa-rose.vercel.app/)
+
+This portfolio was built with Next.js, React, TypeScript, and Tailwind CSS.
 
 ## Getting Started
 
