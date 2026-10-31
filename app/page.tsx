@@ -6,13 +6,13 @@ const projects = [
     description:
       "A responsive portfolio site built with Next.js and TypeScript.",
     technologies: ["Next.js", "TypeScript", "Tailwind", "React"],
-    link: "https://github.com/your-username/project1",
+    link: "https://www.linkedin.com/in/arturo-romero-rodriguez/",
   },
   {
     title: "Task Manager",
     description: "A full-stack app for tracking tasks and team progress.",
     technologies: ["React", "Node.js", "MongoDB", "JavaScript"],
-    link: "https://github.com/your-username/project2",
+    link: "https://www.linkedin.com/in/arturo-romero-rodriguez/",
   },
   {
     title: "E-Commerce Store",
