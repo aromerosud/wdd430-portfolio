@@ -18,7 +18,6 @@ const projects = [
     title: "E-Commerce Store",
     description: "A online storefront featuring product browsing and checkout.",
     technologies: ["Next.js", "Stripe", "PostgreSQL"],
-    link: "https://github.com/your-username/project1",
   },
 ];
 
