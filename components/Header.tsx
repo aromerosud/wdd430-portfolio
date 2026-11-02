@@ -16,7 +16,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="bg-indigo-600 hover:bg-indigo-500 px-5 py-2 rounded-lg font-medium transition duration-200"
+                className="bg-indigo-800 hover:bg-indigo-700 px-5 py-2 rounded-lg font-medium transition duration-200"
               >
                 Home
               </Link>
