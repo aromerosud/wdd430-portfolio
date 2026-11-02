@@ -16,7 +16,7 @@ export default async function Footer() {
         <p className="text-sm">
           Copyright &copy; {currentYear} | Arturo Romero | All rights reserved
         </p>
-        <p className="text-xs text-slate-400 mt-2">
+        <p className="text-xs text-slate-100 mt-2">
           Designed and developed with Next.js and Tailwind CSS.
         </p>
       </div>

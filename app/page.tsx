@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-6">
       <section className="text-center lg:text-left py-6">
-        <span className="inline-block text-xs font-semibold tracking-widest text-indigo-600 mb-2">
+        <span className="inline-block text-xs font-semibold tracking-widest text-indigo-800 mb-2">
           FULL STACK DEVELOPER
         </span>
 
@@ -33,7 +33,7 @@ export default function Home() {
           My Portfolio
         </h1>
 
-        <h2 className="text-lg md:text-xl font-medium text-slate-600 mb-3">
+        <h2 className="text-lg md:text-xl font-medium text-slate-800 mb-3">
           Building modern web experiences.
         </h2>
 
