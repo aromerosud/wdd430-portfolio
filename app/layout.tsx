@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Arturo Romero | Portfolio",
+  description:
+    "Portfolio of Arturo Romero, Software Developer. Explore my projects and experience.",
+};
 
 export default function RootLayout({
   children,
