@@ -38,7 +38,7 @@ export default function Home() {
         </h2>
 
         <p className="text-base text-slate-800 max-w-2xl mx-auto lg:mx-0">
-          Welcome to my portfolio! Here you can fnd a selection of my projects
+          Welcome to my portfolio! Here you can find a selection of my projects
           and work experience.
         </p>
       </section>
