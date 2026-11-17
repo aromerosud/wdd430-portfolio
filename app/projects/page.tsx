@@ -2,6 +2,8 @@ import { Suspense } from "react";
 import { fetchFilteredProjects, fetchProjectsPages } from "@/lib/projects-db";
 import ProjectSearch from "@/components/ProjectSearch";
 import Pagination from "@/components/Pagination";
+import { deleteProject } from "@/lib/actions";
+import Link from "next/link";
 
 export const instant = false;
 
@@ -69,6 +71,24 @@ async function ProjectsList({
               View Project
             </a>
           )}
+
+          <div className="mt-4 flex gap-3">
+            <Link
+              href={`/projects/${project.id}/edit`}
+              className="rounded-lg bg-sky-600 px-4 py-2 text-sm font-medium text-white hover:bg-sky-700"
+            >
+              Edit
+            </Link>
+
+            <form action={deleteProject.bind(null, project.id)}>
+              <button
+                type="submit"
+                className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700"
+              >
+                Delete
+              </button>
+            </form>
+          </div>
         </article>
       ))}
     </div>
@@ -101,6 +121,14 @@ export default async function ProjectsPage({
           Explore my academic and open-source projects, the technologies used,
           and the experience gained throughout my development journey.
         </p>
+        <div className="mt-6">
+          <Link
+            href="/projects/create"
+            className="inline-flex items-center rounded-lg bg-indigo-700 px-5 py-2.5 font-medium text-white transition hover:bg-indigo-800"
+          >
+            + Create New Project
+          </Link>
+        </div>
       </div>
 
       <Suspense fallback={<p>Loading search...</p>}>
