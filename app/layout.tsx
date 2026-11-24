@@ -5,9 +5,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Arturo Romero | Portfolio",
-  description:
-    "Portfolio of Arturo Romero, Software Developer. Explore my projects and experience.",
+  title: {
+    default: 'Arturo Romero | Project Portfolio',
+    template: '%s | Project Portfolio',
+  },
+   description:
+    'A portfolio of web development projects.',
+  metadataBase: new URL('https://wdd430-portfolio-9xv6jk7jb-arturos-projects-5dc924b0.vercel.app/'),
 };
 
 export default function RootLayout({

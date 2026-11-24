@@ -3,6 +3,14 @@ import Link from "next/link";
 import { auth } from "@/auth";
 import { connection } from "next/server";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+  description:
+    "Private dashboard for managing Arturo Romero's portfolio projects.",
+};
+
 async function DashboardContent() {
   await connection();
   const session = await auth();

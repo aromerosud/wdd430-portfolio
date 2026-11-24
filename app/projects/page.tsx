@@ -2,9 +2,15 @@ import { Suspense } from "react";
 import { fetchFilteredProjects, fetchProjectsPages } from "@/lib/projects-db";
 import ProjectSearch from "@/components/ProjectSearch";
 import Pagination from "@/components/Pagination";
-import Link from "next/link";
+import type { Metadata } from "next";
 
 export const instant = false;
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Explore my software development projects, technologies, and experience.",
+};
 
 interface ProjectsPageProps {
   searchParams?: Promise<{

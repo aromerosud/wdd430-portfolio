@@ -1,7 +1,12 @@
-
 import { getProjectById } from "@/lib/projects-db";
 import { updateProject } from "@/lib/actions";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Edit Project",
+  description: "Edit project information in Arturo Romero's portfolio.",
+};
 
 export const instant = false;
 
@@ -19,9 +24,7 @@ export default async function EditProjectPage({
 
   return (
     <main className="mx-auto max-w-2xl p-6">
-      <h1 className="mb-6 text-2xl font-bold">
-        Edit Project
-      </h1>
+      <h1 className="mb-6 text-2xl font-bold">Edit Project</h1>
 
       <form action={updateProject.bind(null, project.id)}>
         <div>
@@ -108,4 +111,3 @@ export default async function EditProjectPage({
     </main>
   );
 }
-

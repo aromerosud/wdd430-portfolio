@@ -4,6 +4,13 @@ import ProjectSearch from "@/components/ProjectSearch";
 import Pagination from "@/components/Pagination";
 import { deleteProject } from "@/lib/actions";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Manage Projects",
+  description: "Manage and organize projects in Arturo Romero's portfolio.",
+};
+
 
 export const instant = false;
 

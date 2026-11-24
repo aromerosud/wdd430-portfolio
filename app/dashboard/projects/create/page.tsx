@@ -1,4 +1,10 @@
 import CreateProjectForm from "./create-project-form";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Create Project",
+  description: "Add a new project to Arturo Romero's portfolio.",
+};
 
 export default function CreateProjectPage() {
   return (
