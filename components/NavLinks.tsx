@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function NavLinks() {
+interface NavLinksProps {
+  isLoggedIn: boolean;
+}
+
+export default function NavLinks({ isLoggedIn }: NavLinksProps) {
   const pathname = usePathname();
 
   const links = [
@@ -11,13 +15,19 @@ export default function NavLinks() {
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
     { href: "/contact", label: "Contact" },
+    ...(isLoggedIn
+      ? [{ href: "/dashboard", label: "Dashboard" }]
+      : [{ href: "/login", label: "Sign In" }]),
   ];
 
   return (
     <nav>
-      <ul className="flex items-center gap-3">
+      <ul className="flex flex-wrap items-center justify-center gap-3">
         {links.map((link) => {
-          const isActive = pathname === link.href;
+          const isActive =
+            link.href === "/"
+              ? pathname === "/"
+              : pathname === link.href || pathname.startsWith(`${link.href}/`);
 
           return (
             <li key={link.href}>
