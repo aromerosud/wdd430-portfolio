@@ -7,6 +7,7 @@ import { getUserByEmail } from "@/lib/data";
 
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,
+  secret: process.env.AUTH_SECRET,
   providers: [
     Credentials({
       async authorize(credentials) {
@@ -19,7 +20,7 @@ export const { auth, signIn, signOut } = NextAuth({
         const { email, password } = parsed.data;
 
         if (email !== process.env.OWNER_EMAIL) return null;
-        
+
         const user = await getUserByEmail(email);
         if (!user) return null;
 
